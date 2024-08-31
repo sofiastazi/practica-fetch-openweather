@@ -10,17 +10,25 @@
         <div class="m-5">
             <h2 class="text-center my-5">Escribe una ciudad y te digo que clima hace ahí!! Con ícono y todo!!!!</h2>
             <div class="d-grid gap-2 col-md-6 mx-auto">
-                <input type="text" id="inputCiudad" placeholder="Ingresa el nombre de la ciudad" class=" form-control success">
-                <button id="botonBuscar" class="col btn btn-outline-success mb-3">Buscar Clima</button>
-                <div id="clima" class="col-8 mx-5 justify-content-center align-content-center d-none">
-                    <p><span id="nombreCiudad"></span></p> <img id="icono">
-                    <p>Clima: <span id="nombreClima"></span></p>
-                    <p>Temperatura: <span id="temperatura"></span></p>
-                    <p>Dirección del viento: <span id="viento"></span></p>
-                    <p>Humedad: <span id="humedad"></span></p>
-                </div>
+
+                <input type="text" id="inputCiudad" placeholder="Ingresa el nombre de la ciudad" class=" form-control">
+                <button id="botonBuscar" class="col btn btn-outline-success mb-3">Buscar</button>
+                
+                    <div id="clima" class="d-none">
+                        <div class="card-header">
+                            <p><span id="nombreCiudad"></span></p>
+                        </div>
+                        <img id="icono">
+                        <div class="card-body">
+                            <h5 class="card-title my-3"><span id="nombreClima"></span></h5>
+                            <p class="card-text">Temperatura: <span id="temperatura"></span></p>
+                            <p class="card-text">Dirección del viento: <span id="viento"></span></p>
+                            <p class="card-text">Humedad: <span id="humedad"></span></p>
+                        </div>
+                    </div>
             </div>
         </div>
+
 
     <script src="clima.js"></script>
 </body>
