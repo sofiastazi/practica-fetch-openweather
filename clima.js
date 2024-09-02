@@ -16,7 +16,7 @@ document.getElementById('botonBuscar').addEventListener('click', () => {
 
             const urlIcono = `http://openweathermap.org/img/wn/${codigoIcono}@2x.png`;
 
-            document.getElementById('clima').classList = 'd-block shadow rounded p-3';
+            document.getElementById('clima').classList = 'd-block shadow rounded p-3 text-center';
             document.getElementById('nombreCiudad').textContent = ciudad;
             document.getElementById('nombreClima').textContent = clima + ', ' + descripcion;
             document.getElementById('temperatura').textContent = temperatura + ' °C';
